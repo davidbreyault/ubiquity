@@ -27,19 +27,25 @@
     </header>
     <section class="presentation">
         <div class="container">
-            <h1>At Ubiquity , We care</h1>
+            <h1>At Ubiquity, We care</h1>
             <p class="presentation-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
-            <ul class="squares">
-                <li class="square"></li>
-                <li class="square"></li>
-                <li class="square"></li>
-                <li class="square"></li>
-                <li class="square"></li>
-                <li class="square"></li>
-                <li class="square"></li>
-                <li class="square"></li>
-            </ul>
         </div>
+        <nav class="arrows-container">
+            <div class="container">
+                <img src="img/arrow-circle-left.svg" alt="Flèche de navigation gauche" class="left-arrow">
+                <img src="img/arrow-circle-right.svg" alt="Flèche de navigation droite" class="right-arrow">
+            </div>
+        </nav>
+        <ul class="squares">
+            <li class="square"></li>
+            <li class="square selected"></li>
+            <li class="square"></li>
+            <li class="square"></li>
+            <li class="square"></li>
+            <li class="square"></li>
+            <li class="square"></li>
+            <li class="square"></li>
+        </ul>
     </section>
     <section class="services">
         <div class="container">
@@ -81,8 +87,10 @@
     </section>
     <section class="description">
         <div class="container">
-            <h2>What Is Ubiquity</h2>
-            <p class="description-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+            <article>
+                <h2>What Is Ubiquity</h2>
+                <p class="description-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+            </article>
             <img src="img/browser-mockup.png" alt="Plusieurs fenêtres d'un navigateur superposées.">
         </div>
     </section>
@@ -90,36 +98,38 @@
         <div class="container">
             <h2>Latest Posts</h2>
             <p class="news-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
-            <article class="card-article">
-                <img src="img/open-space.jpg" alt="Open space d'entreprise">
-                <h3>Blog Title</h3>
-                <p class="card-article-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-            </article>
-            <article class="card-article">
-                <img src="img/laptop-and-cellphone.jpg" alt="Manipulation d'un téléphone au dessus d'un ordinateur portable.">
-                <h3>Title of the Blog</h3>
-                <p class="card-article-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-            </article>
-            <article class="card-article">
-                <img src="img/hand-and pencil.jpg" alt="La main d'un individu en train d'écrire sur du papier avec un stylo.">
-                <h3>Title of the Blog</h3>
-                <p class="card-article-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-            </article>
-            <article class="card-article">
-                <img src="img/helloquence.jpg" alt="Deux ordinateurs portables côte à côte.">
-                <h3>Blog Title</h3>
-                <p class="card-article-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-            </article>
-            <article class="card-article">
-                <img src="img/coffee-and-laptop.jpg" alt="Un ordinateur portable et un café en prise de vue plongée.">
-                <h3>Blog Title</h3>
-                <p class="card-article-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-            </article>
-            <article class="card-article">
-                <img src="img/open-space.jpg" alt="Open space d'entreprise">
-                <h3>Blog Title</h3>
-                <p class="card-article-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-            </article>
+            <nav class="news-cards">
+                <a href="#" class="news-card-article">
+                    <img src="img/open-space.jpg" alt="Open space d'entreprise">
+                    <h3>Blog Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                </a>
+                <a href="#" class="news-card-article">
+                    <img src="img/laptop-and-cellphone.jpg" alt="Manipulation d'un téléphone au dessus d'un ordinateur portable.">
+                    <h3>Title of the Blog</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                </a>
+                <a href="#" class="news-card-article">
+                    <img src="img/hand-and pencil.jpg" alt="La main d'un individu en train d'écrire sur du papier avec un stylo.">
+                    <h3>Title of the Blog</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                </a>
+                <a href="#" class="news-card-article">
+                    <img src="img/helloquence.jpg" alt="Deux ordinateurs portables côte à côte.">
+                    <h3>Blog Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                </a>
+                <a href="#" class="news-card-article">
+                    <img src="img/coffee-and-laptop.jpg" alt="Un ordinateur portable et un café en prise de vue plongée.">
+                    <h3>Blog Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                </a>
+                <a href="#" class="news-card-article">
+                    <img src="img/open-space.jpg" alt="Open space d'entreprise">
+                    <h3>Blog Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                </a>
+            </nav>
         </div>
     </section>
     <section class="fun-facts">
