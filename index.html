@@ -23,6 +23,17 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <button class="btn">
+                <div class="btn-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="btn-crossed">
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
         </div>
     </header>
     <section class="presentation">
@@ -32,19 +43,19 @@
         </div>
         <nav class="arrows-container">
             <div class="container">
-                <img src="img/arrow-circle-left.svg" alt="Flèche de navigation gauche" class="left-arrow">
-                <img src="img/arrow-circle-right.svg" alt="Flèche de navigation droite" class="right-arrow">
+                <button class="left-btn"><img src="img/arrow-circle-left.svg" alt="Flèche de navigation gauche"></button>
+                <button class="right-btn"><img src="img/arrow-circle-right.svg" alt="Flèche de navigation droite"></button>
             </div>
         </nav>
         <ul class="squares">
-            <li class="square"></li>
-            <li class="square selected"></li>
-            <li class="square"></li>
-            <li class="square"></li>
-            <li class="square"></li>
-            <li class="square"></li>
-            <li class="square"></li>
-            <li class="square"></li>
+            <li class="square"><button class="screen-reader-text"><span>slider un</span></button></li>
+            <li class="square selected"><button class="screen-reader-text">slider deux<span></span></button></li>
+            <li class="square"><button class="screen-reader-text"><span>slider trois</span></button></li>
+            <li class="square"><button class="screen-reader-text"><span>slider quatre</span></button></li>
+            <li class="square"><button class="screen-reader-text"><span>slider cinq</span></button></li>
+            <li class="square"><button class="screen-reader-text"><span>slider six</span></button></li>
+            <li class="square"><button class="screen-reader-text"><span>slider sept</span></button></li>
+            <li class="square"><button class="screen-reader-text"><span>slider huit</span></button></li>
         </ul>
     </section>
     <section class="services">
@@ -98,80 +109,108 @@
         <div class="container">
             <h2>Latest Posts</h2>
             <p class="news-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
-            <nav class="news-cards">
-                <a href="#" class="news-card-article">
-                    <img src="img/open-space.jpg" alt="Open space d'entreprise">
-                    <h3>Blog Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-                </a>
-                <a href="#" class="news-card-article">
-                    <img src="img/laptop-and-cellphone.jpg" alt="Manipulation d'un téléphone au dessus d'un ordinateur portable.">
-                    <h3>Title of the Blog</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-                </a>
-                <a href="#" class="news-card-article">
-                    <img src="img/hand-and pencil.jpg" alt="La main d'un individu en train d'écrire sur du papier avec un stylo.">
-                    <h3>Title of the Blog</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-                </a>
-                <a href="#" class="news-card-article">
-                    <img src="img/helloquence.jpg" alt="Deux ordinateurs portables côte à côte.">
-                    <h3>Blog Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-                </a>
-                <a href="#" class="news-card-article">
-                    <img src="img/coffee-and-laptop.jpg" alt="Un ordinateur portable et un café en prise de vue plongée.">
-                    <h3>Blog Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-                </a>
-                <a href="#" class="news-card-article">
-                    <img src="img/open-space.jpg" alt="Open space d'entreprise">
-                    <h3>Blog Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-                </a>
-            </nav>
+            <div class="news-cards">
+                <article class="news-card-article">
+                    <a href="#">
+                        <img src="img/open-space.jpg" alt="Open space d'entreprise">
+                        <h3 class="h1-like">Blog Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                    </a>
+                </article>
+                <article class="news-card-article">
+                    <a href="#">
+                        <img src="img/laptop-and-cellphone.jpg" alt="Manipulation d'un téléphone au dessus d'un ordinateur portable.">
+                        <h3 class="h1-like">Title of the Blog</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                    </a>
+                </article>
+                <article class="news-card-article">
+                    <a href="#">
+                        <img src="img/hand-and pencil.jpg" alt="La main d'un individu en train d'écrire sur du papier avec un stylo.">
+                        <h3 class="h1-like">Title of the Blog</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                    </a>
+                </article>
+                <article class="news-card-article">
+                    <a href="#">
+                        <img src="img/helloquence.jpg" alt="Deux ordinateurs portables côte à côte.">
+                        <h3 class="h1-like">Blog Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                    </a>
+                </article>
+                <article class="news-card-article">
+                    <a href="#">
+                        <img src="img/coffee-and-laptop.jpg" alt="Un ordinateur portable et un café en prise de vue plongée.">
+                        <h3 class="h1-like">Blog Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                    </a>
+                </article>
+                <article class="news-card-article">
+                    <a href="#">
+                        <img src="img/open-space.jpg" alt="Open space d'entreprise">
+                        <h3 class="h1-like">Blog Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                    </a>
+                </article>    
+            </div>
         </div>
     </section>
     <section class="fun-facts">
-        <header class="fun-facts-header">
-            <div class="container">
-                <h2>Fun Facts</h2>
-                <ul class="counters">
-                    <li class="counter">
-                        <p><span>5</span>People</p>
-                    </li>
-                    <li class="counter">
-                        <p><span>243</span>Pageviews</p>
-                    </li>
-                    <li class="counter">
-                        <p><span>23</span>Coffees</p>
-                    </li>
-                    <li class="counter"> 
-                        <p><span>600</span>Hours</p>
-                    </li>
-                    <li class="counter">
-                        <p><span>40</span>Days</p>
-                    </li>
-                    <li class="counter">
-                        <p><span>17</span>Websites</p>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <main class="fun-facts-team">
-            <div class="container">
-                <figure class="team-member"><img src="img/profile-pic.jpg" alt="Photographie d'une dame qui travaille sur son ordinateur."></figure>
-                <article class="team-member-fact">
-                    <h3>Amanda Sigfried</h3>
-                    <p class="team-member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
-                </article>
-            </div>
-        </main>
+        <div class="container">
+            <h2>Fun Facts</h2>
+            <ul class="counters">
+                <li class="counter">
+                    <p class="h1-like">5</p>
+                    <p>People</p>
+                </li>
+                <li class="counter">
+                    <p class="h1-like">243</p>
+                    <p>Pageviews</p>
+                </li>
+                <li class="counter">
+                    <p class="h1-like">23</p>
+                    <p>Coffees</p>
+                </li>
+                <li class="counter">
+                    <p class="h1-like">600</p>
+                    <p>Hours</p>
+                </li>
+                <li class="counter">
+                    <p class="h1-like">40</p>
+                    <p>Days</p>
+                </li>
+                <li class="counter">
+                    <p class="h1-like">17</p>
+                    <p>Websites</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <figure class="team-member-img">
+                <img src="img/profile-pic.jpg" alt="Photographie d'une jeune femme qui travaille sur son ordinateur.">
+            </figure>
+            <article class="team-member-fact">
+                <h3 class="h2-like">Amanda Sigfried</h3>
+                <p class="team-member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+            </article>
+        </div>
+        <ul class="squares">
+            <li class="square"><button class="screen-reader-text"><span>slider un</span></button></li>
+            <li class="square selected"><button class="screen-reader-text">slider deux<span></span></button></li>
+            <li class="square"><button class="screen-reader-text"><span>slider trois</span></button></li>
+            <li class="square"><button class="screen-reader-text"><span>slider quatre</span></button></li>
+            <li class="square"><button class="screen-reader-text"><span>slider cinq</span></button></li>
+            <li class="square"><button class="screen-reader-text"><span>slider six</span></button></li>
+            <li class="square"><button class="screen-reader-text"><span>slider sept</span></button></li>
+            <li class="square"><button class="screen-reader-text"><span>slider huit</span></button></li>
+        </ul>
     </section>
     <footer class="footer">
         <div class="container">
-            <ul class="website-plan">
-                <li class="website-plan-list">
+            <nav class="website-plan">
+                <div class="website-plan-list">
                     <p>Recent Posts</p>
                     <ul class="recent-posts-list">
                         <li><img src="img/arrow-double.svg" alt=""><a href="#">Lorem ipsum dolor</a></li>
@@ -180,20 +219,20 @@
                         <li><img src="img/arrow-double.svg" alt=""><a href="#">diam nonumy</a></li>
                         <li><img src="img/arrow-double.svg" alt=""><a href="#">eirmod tempor</a></li>
                     </ul>
-                </li>
-                <li class="website-plan-list">
+                </div>
+                <div class="website-plan-list">
                     <p>Recent Comments</p>
-                    <ul class="recent-posts-list">
+                    <ul class="recent-comments-list">
                         <li><img src="img/arrow-double.svg" alt=""><a href="#">Lorem ipsum dolor</a></li>
                         <li><img src="img/arrow-double.svg" alt=""><a href="#">sit amet, consetetur</a></li>
                         <li><img src="img/arrow-double.svg" alt=""><a href="#">sadipscing elitr, sed</a></li>
                         <li><img src="img/arrow-double.svg" alt=""><a href="#">diam nonumy</a></li>
                         <li><img src="img/arrow-double.svg" alt=""><a href="#">eirmod tempor</a></li>
                     </ul>
-                </li>
-                <li class="website-plan-list tag-list">
+                </div>
+                <div class="website-plan-list">
                     <p>Tags</p>
-                    <ul class="recent-posts-list">
+                    <ul class="tags-list">
                         <li><a href="#">Insider</a></li>
                         <li><a href="#">Check</a></li>
                         <li><a href="#">Demo</a></li>
@@ -202,10 +241,10 @@
                         <li><a href="#">Post</a></li>
                         <li><a href="#">Management</a></li>
                     </ul>
-                </li>
-                <li class="website-plan-list">
+                </div>
+                <address class="website-plan-list">
                     <p>Ubiquity</p>
-                    <ul class="recent-posts-list">
+                    <ul class="ubiquity-contact-list">
                         <li>
                             <img src="img/map-point.svg" alt="Le pointer sur la carte">
                             <p>2499 Bee Street, Bear Lake Michigan 49614</p>
@@ -219,8 +258,8 @@
                             <p>Hello@domainname.com</p>
                         </li>
                     </ul>
-                </li>
-            </ul>
+                </address>
+            </nav>
             <nav class="footer-navbar">
                 <p class="copyright">© 2019 Ubiquity . All Rights Reserved.</p>
                 <ul class="social">
@@ -231,5 +270,11 @@
             </nav>
         </div>
     </footer>
+    <!-- <ul class="test">
+        <li>fzfz</li>
+        <li>gtb</li>
+        <li>aaa</li>
+    </ul> -->
+    <script src="js/app.js"></script>
 </body>
 </html>
