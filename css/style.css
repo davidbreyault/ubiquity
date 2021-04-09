@@ -71,13 +71,13 @@
 :root {
 	--primary-background: #fff;
 	--primary-text: #333;
-	--secondary: #F16822;
-	--secondary-text: #EEE; /* et service-card-figure-bg */
-	--secondary-background: #F9F9F9;
-	--header-logo-text: #707070; /* et footer separation bar */
+	--secondary: #f16822;
+	--secondary-text: #eee;
+	--secondary-background: #f9f9f9;
+	--header-logo-text: #707070;
 	--footer-copyright-text: #777;
 	--footer-tags-background: #444;
-	--footer-links: #CCC;
+	--footer-links: #ccc;
 	--box-shadows: #00000029;
 }
 
@@ -100,14 +100,16 @@ h3,
 	text-align: center;
 }
 
-h1, .h1-like {
+h1,
+.h1-like {
 	margin-bottom: 5rem;
 	color: var(--secondary);
 	line-height: 1.2;
 	font-size: calc(6.4rem / 1.6);
 }
 
-h2, .h2-like {
+h2,
+.h2-like {
 	position: relative;
 	margin-bottom: 5.4rem;
 	color: var(--primary-text);
@@ -116,35 +118,47 @@ h2, .h2-like {
 }
 
 @media screen and (min-width: 36em) {
-	h1, .h1-like {font-size: calc(6.4rem / 1.2);}
-	h2, .h2-like {font-size: calc(4.8rem / 1.2);}
+	h1,
+	.h1-like {
+		font-size: calc(6.4rem / 1.2);
+	}
+	h2,
+	.h2-like {
+		font-size: calc(4.8rem / 1.2);
+	}
 }
 
 @media screen and (min-width: 75em) {
-	h1, .h1-like {font-size: 6.4rem;}
-	h2, .h2-like {font-size: 4.8rem;}
+	h1,
+	.h1-like {
+		font-size: 6.4rem;
+	}
+	h2,
+	.h2-like {
+		font-size: 4.8rem;
+	}
 }
 
 h2::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 7rem;
 	left: 50%;
 	width: 1rem;
 	height: 1rem;
 	background-color: var(--secondary);
-	transform: translateX(-.75rem);
+	transform: translateX(-0.75rem);
 }
 
 h2::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 7rem;
 	left: 50%;
 	width: 1rem;
 	height: 1rem;
 	background-color: var(--primary-text);
-	transform: translateX(.75rem);
+	transform: translateX(0.75rem);
 }
 
 h3 {
@@ -155,10 +169,12 @@ h3 {
 }
 
 @media screen and (min-width: 36em) {
-	h3 {font-size: 2.4rem;}
+	h3 {
+		font-size: 2.4rem;
+	}
 }
 
-h2 + p  {
+h2 + p {
 	max-width: 95%;
 	margin-left: auto;
 	margin-right: auto;
@@ -188,7 +204,7 @@ section {
 	padding: 8rem 0;
 }
 
-@media  screen and (min-width: 36em) {
+@media screen and (min-width: 36em) {
 	section {
 		padding: 17rem 0;
 	}
@@ -206,35 +222,37 @@ section {
 	padding-right: 1.6rem;
 }
 
-@media screen and (min-width: 36em) { /* 36em = 36 * 16(base navigateur) = 576px */
+@media screen and (min-width: 36em) {
+	/* 36em = 36 * 16(base navigateur) = 576px */
 	.container {
 		max-width: 54.6rem;
-	}	
+	}
 }
 
-@media screen and (min-width: 48em) { /* 768px */
+@media screen and (min-width: 48em) {
+	/* 768px */
 	.container {
 		max-width: 73.8rem;
-	}	
+	}
 }
 
-@media screen and (min-width: 62em) { /* 992px */
+@media screen and (min-width: 62em) {
+	/* 992px */
 	.container {
 		max-width: 96.2rem;
-	}	
+	}
 }
 
-@media screen and (min-width: 75em) { /* 1200px */
+@media screen and (min-width: 75em) {
+	/* 1200px */
 	.container {
 		max-width: 117rem;
-	}	
+	}
 }
 
 /* ############################################# */
 
-
 /* ################## HEADER ################### */
-
 
 /* ############################################# */
 
@@ -267,7 +285,7 @@ section {
 }
 
 .logo-title {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 2rem;
 }
@@ -299,24 +317,22 @@ section {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: currentColor;
-	transition: background-color .3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
 }
 
 .header-navbar a.active {
 	color: var(--primary-background);
-	background-color: #F16822;
+	background-color: #f16822;
 }
 
 .header-navbar a:hover,
 .header-navbar a:focus {
-	background-color: #F16822;
+	background-color: #f16822;
 }
 
 /* ############################################# */
 
-
 /* ########## SECTION - PRESENTATION ########### */
-
 
 /* ############################################# */
 
@@ -361,10 +377,10 @@ section {
 .arrows-container button {
 	border: none;
 	background-color: transparent;
-	opacity: .75;
+	opacity: 0.75;
 	cursor: pointer;
 	transform: scale(1);
-	transition: all .3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .arrows-container button:hover,
@@ -420,9 +436,7 @@ section {
 
 /* ############################################# */
 
-
 /* ############ SECTION - SERVICES ############# */
-
 
 /* ############################################# */
 
@@ -438,14 +452,14 @@ section {
 
 @media screen and (min-width: 36em) {
 	.cards {
-		grid-template-columns: repeat(2, 1fr);                      
-	}	
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media screen and (min-width: 62em) {
 	.cards {
-		grid-template-columns: repeat(4, 1fr);                      
-	}	
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 .card {
@@ -474,9 +488,7 @@ section {
 
 /* ############################################# */
 
-
 /* ########## SECTION - DESCRIPTION ############ */
-
 
 /* ############################################# */
 
@@ -508,7 +520,7 @@ section {
 @media screen and (min-width: 36em) {
 	.description article {
 		margin-bottom: 17rem;
-	}	
+	}
 }
 
 .description h2 {
@@ -520,7 +532,7 @@ section {
 }
 
 .description-text {
-	color: #EEE;
+	color: #eee;
 }
 
 .description img {
@@ -530,9 +542,7 @@ section {
 
 /* ############################################# */
 
-
 /* ########## SECTION - LATEST POSTS ########### */
-
 
 /* ############################################# */
 
@@ -576,7 +586,7 @@ section {
 	padding: 2.5rem;
 	background-color: var(--primary-background);
 	box-shadow: 0px 3px 6px #00000029;
-	transition: all .3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	cursor: pointer;
 }
 
@@ -606,7 +616,7 @@ section {
 	.news-card-article h3 {
 		font-size: 4rem;
 	}
-	
+
 	.news-card-article p {
 		padding-left: 2.5rem;
 		padding-right: 2.5rem;
@@ -621,37 +631,38 @@ section {
 }
 
 .news-card-article::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(241, 103, 34, .1);
+	background-color: rgba(241, 103, 34, 0.1);
 	pointer-events: none;
 	transform: scale(0);
-	transition: transform .5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
 }
 
 .news-card-article:hover {
-	transform: scale(.9);
+	transform: scale(0.9);
 }
 
 .news-card-article:hover::after {
 	transform: scale(1);
 }
 
-
 /* ############################################# */
 
-
 /* ########### SECTION - FUN FACTS ############# */
-
 
 /* ############################################# */
 
 .fun-facts {
-	background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url('../img/coffee-and-laptop-bg.jpg');
+	background-image: linear-gradient(
+			rgba(255, 255, 255, 0.9),
+			rgba(255, 255, 255, 0.9)
+		),
+		url("../img/coffee-and-laptop-bg.jpg");
 	background-position: 60% center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -659,7 +670,11 @@ section {
 
 @media (min-resolution: 144dpi) {
 	.fun-facts {
-		background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url('../img/coffee-and-laptop-bg@2x.jpg');
+		background-image: linear-gradient(
+				rgba(255, 255, 255, 0.9),
+				rgba(255, 255, 255, 0.9)
+			),
+			url("../img/coffee-and-laptop-bg@2x.jpg");
 	}
 }
 
@@ -677,15 +692,15 @@ section {
 	.counters {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 3rem;	
-	}	
+		gap: 3rem;
+	}
 }
 
 @media screen and (min-width: 62em) {
 	.counters {
 		display: flex;
 		justify-content: space-between;
-	}	
+	}
 }
 
 .counters .h1-like {
@@ -701,9 +716,7 @@ section {
 
 /* ############################################# */
 
-
 /* ############## SECTION - TEAM ############### */
-
 
 /* ############################################# */
 
@@ -711,7 +724,7 @@ section {
 	position: relative;
 	padding-top: 17rem;
 	padding-bottom: 21rem;
-	background-image: url('../img/tablet-bg-orange.jpg');
+	background-image: url("../img/tablet-bg-orange.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -719,7 +732,7 @@ section {
 
 @media (min-resolution: 144dpi) {
 	.team {
-		background-image: url('../img/tablet-bg-orange@2x.jpg');
+		background-image: url("../img/tablet-bg-orange@2x.jpg");
 	}
 }
 
@@ -732,7 +745,7 @@ section {
 @media screen and (min-width: 48em) {
 	.team .container {
 		grid-template-columns: max-content 1fr;
-	}	
+	}
 }
 
 .team-member-img {
@@ -783,9 +796,7 @@ section {
 
 /* ############################################# */
 
-
 /* ################# FOOTER #################### */
-
 
 /* ############################################# */
 
@@ -807,21 +818,21 @@ section {
 .website-plan {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	gap: 3rem;                      
+	gap: 3rem;
 }
 
 @media screen and (min-width: 36em) {
 	.website-plan {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);                      
-	}	
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media screen and (min-width: 75em) {
 	.website-plan {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);                      
-	}	
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 .website-plan-list > p {
@@ -867,9 +878,9 @@ section {
 .tags-list a {
 	display: block;
 	margin-bottom: 1.2rem;
-	margin-left: .6rem;
-	margin-right: .6rem;
-	padding: .5rem 1.2rem;
+	margin-left: 0.6rem;
+	margin-right: 0.6rem;
+	padding: 0.5rem 1.2rem;
 	background-color: var(--footer-tags-background);
 	text-transform: uppercase;
 	font-size: 1.2rem;
@@ -912,8 +923,8 @@ section {
 
 .social li a {
 	display: block;
-	transition: all .2s ease-in-out;
-	opacity: .8;
+	transition: all 0.2s ease-in-out;
+	opacity: 0.8;
 }
 
 .social li a:hover,
@@ -936,9 +947,7 @@ section {
 
 /* ############################################# */
 
-
 /* ########### GESTION DU BURGER MENU ########## */
-
 
 /* ############################################# */
 
@@ -949,14 +958,14 @@ section {
 	}
 
 	.main-header::after {
-		content: '';
+		content: "";
 		position: absolute;
 		z-index: 1;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: #FFF;
+		background-color: #fff;
 	}
 
 	.logo {
@@ -973,7 +982,7 @@ section {
 		flex-direction: column;
 		background-color: #fff;
 		transform: translateY(-100%);
-		transition: transform .5s ease-in-out;
+		transition: transform 0.5s ease-in-out;
 	}
 
 	.header-navbar li {
@@ -1004,29 +1013,37 @@ section {
 		height: 5px;
 		border-radius: calc(5px / 2);
 		background-color: #000;
-		transition: all .25s ease-in-out;
+		transition: all 0.25s ease-in-out;
 	}
 
 	.btn-burger {
 		width: 90%;
-        height: 60%;
-        margin: 20% auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+		height: 60%;
+		margin: 20% auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
-	.btn-burger span {width: 100%;}
-	.btn-burger span:nth-of-type(1) {transition-delay: 760ms;}
-	.btn-burger span:nth-of-type(2) {transition-delay: 640ms;}
-	.btn-burger span:nth-of-type(3) {transition-delay: 520ms;}
+	.btn-burger span {
+		width: 100%;
+	}
+	.btn-burger span:nth-of-type(1) {
+		transition-delay: 760ms;
+	}
+	.btn-burger span:nth-of-type(2) {
+		transition-delay: 640ms;
+	}
+	.btn-burger span:nth-of-type(3) {
+		transition-delay: 520ms;
+	}
 
 	.btn-crossed {
 		position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        transform: rotate(45deg);
+		top: 0;
+		width: 100%;
+		height: 100%;
+		transform: rotate(45deg);
 	}
 
 	.btn-crossed span {
@@ -1043,17 +1060,31 @@ section {
 	.btn-crossed span:nth-of-type(2) {
 		position: absolute;
 		left: 50%;
-		transform-origin:  calc(5px / 2);
+		transform-origin: calc(5px / 2);
 		transform: rotate(90deg) translateY(50%);
 		transition-delay: 120ms;
 	}
 
-	.toggle .btn-burger span {width: 0%;}
-	.toggle .btn-burger span:nth-of-type(1) {transition-delay: 120ms;}
-	.toggle .btn-burger span:nth-of-type(2) {transition-delay: 240ms;}
-	.toggle .btn-burger span:nth-of-type(3) {transition-delay: 360ms;}
+	.toggle .btn-burger span {
+		width: 0%;
+	}
+	.toggle .btn-burger span:nth-of-type(1) {
+		transition-delay: 120ms;
+	}
+	.toggle .btn-burger span:nth-of-type(2) {
+		transition-delay: 240ms;
+	}
+	.toggle .btn-burger span:nth-of-type(3) {
+		transition-delay: 360ms;
+	}
 
-	.toggle .btn-crossed span {width: 100%;}
-	.toggle .btn-crossed span:nth-of-type(1) {transition-delay: 560ms;}
-	.toggle .btn-crossed span:nth-of-type(2) {transition-delay: 760ms;}
+	.toggle .btn-crossed span {
+		width: 100%;
+	}
+	.toggle .btn-crossed span:nth-of-type(1) {
+		transition-delay: 560ms;
+	}
+	.toggle .btn-crossed span:nth-of-type(2) {
+		transition-delay: 760ms;
+	}
 }
