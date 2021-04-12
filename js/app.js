@@ -9,29 +9,31 @@ function showArrowsSlider() {
 		: (arrowsSlider.style.display = "none");
 }
 
+function removeVisibility() {
+	headerMenuLinks.forEach((link) => {
+		link.classList.remove("visibility-hidden");
+	});
+}
+
 function linksVisibility() {
 	if (window.innerWidth < 768) {
 		headerMenuLinks.forEach((link) => {
-			link.classList.add("visible-hidden");
+			link.classList.add("visibility-hidden");
 		});
 		burgerButton.addEventListener("click", () => {
 			if (headerMenu.classList.contains("open")) {
 				headerMenuLinks.forEach((link) => {
+					// Cache les liens du menu une fois l'animation de transition effectuée.
 					setTimeout(() => {
-						link.classList.remove('visible-hidden');
+						link.classList.remove("visibility-hidden");
 					}, 500);
 				});
-				
 			} else {
-				headerMenuLinks.forEach((link) => {
-					link.classList.remove("visible-hidden");
-				});
+				removeVisibility();
 			}
 		});
 	} else {
-		headerMenuLinks.forEach((link) => {
-			link.classList.remove("visible-hidden");
-		});
+		removeVisibility();
 	}
 }
 
