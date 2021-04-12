@@ -15,9 +15,18 @@ function linksVisibility() {
 			link.classList.add("visible-hidden");
 		});
 		burgerButton.addEventListener("click", () => {
-			headerMenuLinks.forEach((link) => {
-				link.classList.toggle("visible-hidden");
-			});
+			if (headerMenu.classList.contains("open")) {
+				headerMenuLinks.forEach((link) => {
+					setTimeout(() => {
+						link.classList.remove('visible-hidden');
+					}, 500);
+				});
+				
+			} else {
+				headerMenuLinks.forEach((link) => {
+					link.classList.remove("visible-hidden");
+				});
+			}
 		});
 	} else {
 		headerMenuLinks.forEach((link) => {
