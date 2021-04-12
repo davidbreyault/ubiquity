@@ -10,14 +10,19 @@ function showArrowsSlider() {
 function linksVisibility() {
     if (window.innerWidth < 768) {
         headerMenuLinks.forEach((link) => {
-            link.style.visibility = 'hidden';
+            link.classList.add('visible-hidden');
         })
         burgerButton.addEventListener('click', () => {
             headerMenuLinks.forEach((link) => {
-                link.style.visibility = 'visible';
+                link.classList.toggle('visible-hidden');
             })    
         })
+    } else {
+        headerMenuLinks.forEach((link) => {
+            link.classList.remove('visible-hidden');
+        })
     }
+    
 }
 
 burgerButton.addEventListener('click', () => {
@@ -27,6 +32,7 @@ burgerButton.addEventListener('click', () => {
 
 window.addEventListener('resize', () => {
     showArrowsSlider();
+    linksVisibility();
     if (window.innerWidth >= 768 && headerMenu.classList.contains('open')) {
         headerMenu.classList.remove('open');
         burgerButton.classList.remove('toggle');
