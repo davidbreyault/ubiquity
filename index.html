@@ -48,14 +48,13 @@
             </div>
         </nav>
         <ul class="squares">
-            <li class="square"><button class="screen-reader-text"><span>slider un</span></button></li>
-            <li class="square selected"><button class="screen-reader-text">slider deux<span></span></button></li>
-            <li class="square"><button class="screen-reader-text"><span>slider trois</span></button></li>
-            <li class="square"><button class="screen-reader-text"><span>slider quatre</span></button></li>
-            <li class="square"><button class="screen-reader-text"><span>slider cinq</span></button></li>
-            <li class="square"><button class="screen-reader-text"><span>slider six</span></button></li>
-            <li class="square"><button class="screen-reader-text"><span>slider sept</span></button></li>
-            <li class="square"><button class="screen-reader-text"><span>slider huit</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button class="active"><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
         </ul>
     </section>
     <section class="services">
@@ -112,42 +111,60 @@
             <div class="news-cards">
                 <article class="news-card-article">
                     <a href="#">
-                        <img src="img/open-space.jpg" srcset="img/open-space@2x.jpg 2x" alt="Open space d'entreprise">
+                        <picture>
+                            <source srcset="img/open-space.jpg, img/open-space@2x.jpg 2x">
+                            <img src="img/open-space.jpg" alt="Open space d'entreprise">
+                        </picture>
                         <h3 class="h1-like">Blog Title</h3>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
                     </a>
                 </article>
                 <article class="news-card-article">
                     <a href="#">
-                        <img src="img/laptop-and-cellphone.jpg" srcset="img/laptop-and-cellphone@2x.jpg 2x" alt="Manipulation d'un téléphone au dessus d'un ordinateur portable.">
+                        <picture>
+                            <source srcset="img/laptop-and-cellphone.jpg, img/laptop-and-cellphone@2x.jpg 2x">
+                            <img src="img/laptop-and-cellphone.jpg" alt="Ordinateur et téléphone">
+                        </picture>
                         <h3 class="h1-like">Title of the Blog</h3>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
                     </a>
                 </article>
                 <article class="news-card-article">
                     <a href="#">
-                        <img src="img/hand-and pencil.jpg" srcset="img/hand-and pencil@2x.jpg 2x" alt="La main d'un individu en train d'écrire sur du papier avec un stylo.">
+                        <picture>
+                            <source srcset="img/hand-and pencil.jpg, img/hand-and pencil.jpg@2x.jpg 2x">
+                            <img src="img/hand-and pencil.jpg" alt="La main d'un individu en train d'écrire sur du papier avec un stylo.">
+                        </picture>
                         <h3 class="h1-like">Title of the Blog</h3>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
                     </a>
                 </article>
                 <article class="news-card-article">
                     <a href="#">
-                        <img src="img/helloquence.jpg" srcset="img/helloquence@2x.jpg 2x" alt="Deux ordinateurs portables côte à côte.">
+                        <picture>
+                            <source srcset="img/helloquence.jpg, img/helloquence@2x.jpg 2x">
+                            <img src="img/helloquence.jpg" alt="Deux ordinateurs portables côte à côte.">
+                        </picture>
                         <h3 class="h1-like">Blog Title</h3>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
                     </a>
                 </article>
                 <article class="news-card-article">
                     <a href="#">
-                        <img  src="img/coffee-and-laptop.jpg" srcset="img/coffee-and-laptop@2x.jpg 2x" alt="Un ordinateur portable et un café en prise de vue plongée.">
+                        <picture>
+                            <source srcset="img/coffee-and-laptop.jpg, img/coffee-and-laptop@2x.jpg 2x">
+                            <img src="img/coffee-and-laptop.jpg" alt="Un ordinateur portable et un café en prise de vue plongée.">
+                        </picture>
                         <h3 class="h1-like">Blog Title</h3>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
                     </a>
                 </article>
                 <article class="news-card-article">
                     <a href="#">
-                        <img src="img/open-space.jpg" srcset="img/open-space@2x.jpg 2x" alt="Open space d'entreprise">
+                        <picture>
+                            <source srcset="img/open-space.jpg, img/open-space@2x.jpg 2x">
+                            <img src="img/open-space.jpg" alt="Open space d'entreprise">
+                        </picture>
                         <h3 class="h1-like">Blog Title</h3>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
                     </a>
@@ -188,23 +205,24 @@
     </section>
     <section class="team">
         <div class="container">
-            <figure class="team-member-img">
-                <img src="img/profile-pic.jpg" srcset="img/profile-pic@2x.jpg 2x" alt="Photographie d'une jeune femme qui travaille sur son ordinateur.">
-            </figure>
+            <picture class="team-member-img">
+                <source srcset="img/profile-pic.jpg, img/profile-pic@2x.jpg 2x">
+                <img src="img/profile-pic.jpg" alt="Amanda Sigfried">
+            </picture>
             <article class="team-member-fact">
                 <h3 class="h2-like">Amanda Sigfried</h3>
                 <p class="team-member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
             </article>
         </div>
         <ul class="squares">
-            <li class="square"><button class="screen-reader-text"><span>slider un</span></button></li>
-            <li class="square selected"><button class="screen-reader-text">slider deux<span></span></button></li>
-            <li class="square"><button class="screen-reader-text"><span>slider trois</span></button></li>
-            <li class="square"><button class="screen-reader-text"><span>slider quatre</span></button></li>
-            <li class="square"><button class="screen-reader-text"><span>slider cinq</span></button></li>
-            <li class="square"><button class="screen-reader-text"><span>slider six</span></button></li>
-            <li class="square"><button class="screen-reader-text"><span>slider sept</span></button></li>
-            <li class="square"><button class="screen-reader-text"><span>slider huit</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button class="active"><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
+            <li class="square"><button><span class="screen-reader-text">slider un</span></button></li>
         </ul>
     </section>
     <footer class="footer">
