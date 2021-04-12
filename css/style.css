@@ -214,8 +214,8 @@ section {
 	display: none;
 }
 
-.visible-hidden {
-	visibility: hidden;	
+.visibility-hidden {
+	visibility: hidden;
 }
 
 .container {
@@ -415,26 +415,39 @@ section {
 
 .squares {
 	position: absolute;
-	bottom: 8rem;
+	bottom: 4rem;
 	display: flex;
 	justify-content: center;
-	/* border: solid 1px red; */
+}
+
+@media screen and (min-width: 36em) {
+	.squares {
+		bottom: 8rem;
+	}
 }
 
 .squares li {
 	width: 1rem;
 	height: 1rem;
 	margin-right: 1rem;
-	background-color: var(--primary-text);
-	cursor: pointer;
+	overflow: hidden;
 }
 
 .squares li:last-of-type {
 	margin-right: 0;
 }
 
-.squares li:hover,
-.squares li.selected {
+.squares button {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: var(--primary-text);
+	border: none;
+}
+
+.squares button:hover,
+.squares button:focus,
+.squares button.active {
 	background-color: var(--secondary);
 }
 
@@ -587,16 +600,15 @@ section {
 	position: relative;
 	display: block;
 	justify-self: center;
-	padding: 2.5rem;
 	background-color: var(--primary-background);
 	box-shadow: 0px 3px 6px #00000029;
-	transition: all 0.3s ease-in-out;
-	cursor: pointer;
+	overflow: hidden;
 }
 
 .news-card-article a {
 	display: block;
 	width: 100%;
+	padding: 2.5rem;
 }
 
 .news-card-article img {
@@ -630,11 +642,7 @@ section {
 	}
 }
 
-.news-card-article a:focus {
-	outline: dotted 3px grey;
-}
-
-.news-card-article::after {
+.news-card-article a::after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -642,17 +650,15 @@ section {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(241, 103, 34, 0.1);
+	clip-path: circle(50% at 50% 50%);
 	pointer-events: none;
 	transform: scale(0);
-	transition: transform 0.5s ease-in-out;
+	transition: transform 0.5s cubic-bezier(.76,.05,.59,.96);
 }
 
-.news-card-article:hover {
-	transform: scale(0.9);
-}
-
-.news-card-article:hover::after {
-	transform: scale(1);
+.news-card-article a:hover::after,
+.news-card-article a:focus::after {
+	transform: scale(1.5);
 }
 
 /* ############################################# */
@@ -786,15 +792,9 @@ section {
 	width: 100%;
 }
 
-.team .square {
-	background-color: var(--primary-text);
-}
-
-.team .square:hover {
-	background-color: var(--primary-background);
-}
-
-.team .square.selected {
+.team .squares button:hover,
+.team .squares button:focus,
+.team .squares button.active {
 	background-color: var(--primary-background);
 }
 
